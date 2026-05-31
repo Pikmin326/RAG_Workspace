@@ -1,6 +1,8 @@
 streamlit
+chromadb
 llama-index
 llama-index-llms-gemini
 llama-index-embeddings-gemini
-llama-index-readers-file
+llama-index-readers-notion
 python-dotenv
+requests
