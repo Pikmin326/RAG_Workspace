@@ -20,7 +20,7 @@ def initialize_settings():
     if not gemini_key:
         raise ValueError("GEMINI_API_KEY가 설정되지 않았습니다.")
     
-    Settings.llm = Gemini(model="models/gemini-1.5-pro", api_key=gemini_key)
+    Settings.llm = Gemini(model="models/gemini-2.5-flash", api_key=gemini_key)
     Settings.embed_model = GeminiEmbedding(model_name="models/embedding-001", api_key=gemini_key)
     Settings.text_splitter = SentenceSplitter(chunk_size=512, chunk_overlap=50)
 
